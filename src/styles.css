@@ -3,9 +3,14 @@ body, html {
   padding: 0;
   height: 20%;
 }
-
+body{
+  display: flex;
+  justify-content: center;
+}
 .grid-container {
   display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0;
   height: 50vh;
@@ -16,4 +21,9 @@ body, html {
   size: 20cm 20cm ;
   height: 10px;
   width: 10px;
+}
+.inside{
+  background-color: beige;
+  border-radius: 10px;
+  height: 25px;
 }
