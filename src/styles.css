@@ -1,5 +1,19 @@
-.square {
-    height: 100px;
-    width: 100px;
-  }
-  
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 20%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  height: 50vh;
+  width: 50vh; /* Ensure the grid container fills the entire viewport height */
+
+}
+.button{
+  size: 20cm 20cm ;
+  height: 10px;
+  width: 10px;
+}

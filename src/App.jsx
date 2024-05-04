@@ -44,21 +44,21 @@ function handleCicked(i){
   return (
     <div>
       <div className="status">{status}</div>
-      <div className='board-row'>
+        <div className='grid-container'>
         <Square value = {squares[0]} onSquareClick={()=>{handleCicked(0)}}/>
         <Square value = {squares[1]} onSquareClick={()=>{handleCicked(1)}}/>
         <Square value = {squares[2]} onSquareClick={()=>{handleCicked(2)}}/>
-      </div>
-      <div className='board-row'>
+     
+      
         <Square value = {squares[3]} onSquareClick={()=>{handleCicked(3)}}/>
         <Square value = {squares[4]} onSquareClick={()=>{handleCicked(4)}}/>
         <Square value = {squares[5]} onSquareClick={()=>{handleCicked(5)}}/>
-      </div>
-      <div className='board-row'>
+      
+      
         <Square value = {squares[6]} onSquareClick={()=>{handleCicked(6)}}/>
         <Square value = {squares[7]} onSquareClick={()=>{handleCicked(7)}}/>
         <Square value = {squares[8]} onSquareClick={()=>{handleCicked(8)}}/>
-      </div>
+        </div> 
     </div>
   );
 }
